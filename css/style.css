@@ -1,0 +1,489 @@
+ 
+html{font-size:625%;}
+*{ margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+body{ background:#e0d7c6;font-size:0.16rem;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; color:#666;}
+a:hover {color:#9f0000;}
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+img{display:block;max-width:100%;}
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+/*宽度包含边框和内边距*/
+div{box-sizing:border-box;}
+
+  
+
+.none{display:none;}
+#header{
+	width:100%;
+    margin:0 auto;
+    height:0.45rem;
+    background-color:#fc7e3f;
+    position:fixed;
+    top:0;
+    z-index:9;
+}
+#header .link{
+    height:0.45rem;
+    line-height:0.45rem;
+    color:#eee;
+
+}
+#header .link li{
+	width:25%;
+	text-align:center;
+	float:left;
+}
+#header .link a{
+	color:#ccc;
+	display:block;
+}
+#header .link a:hover,
+#header .active .visited a{
+	color:#fffe3f;
+}
+#adver{
+	max-width:6.4rem;
+	height:34vh;
+    margin:0 auto;
+    padding:.45rem 0 0 0;
+    overflow:hidden;
+    position:relative;
+}
+#adver img{
+	max-width:6.4rem;
+	height:34vh;
+    position:absolute;
+    left:0;	 
+    z-index:1;
+}
+#adver ul {
+	position:absolute;
+    right:5%;
+    top:89%;
+    z-index:4;
+} 
+#adver ul li{
+	float:left;
+	padding:0 0.08rem ;
+	 
+}
+#adver ul li .current{
+	color:#fff;
+}
+#adver span{
+	display:block; 
+	width:6.4rem;
+	height:4vh;
+	position:absolute;
+	top:89%;
+	left:0;
+	background:#333;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	z-index:3;
+}
+ 
+#search{
+   max-width:6.4rem;
+   margin:0 auto;
+   height:0.33rem;
+   background-color:#ddd;
+   padding:.03rem 0 0 0;
+   position:relative;
+}
+#search .search{
+	width:95%;
+	height:.27rem;
+	border-radius:.04rem;
+	border:none;
+	outline:none;
+	background-color:#fff;
+	display:block;
+	margin:0 auto;
+	font-size:.14rem;
+	padding:0 .05rem;
+}
+#search .button{
+	display:block;
+	width:.5rem;
+	height:.27rem;
+	position:absolute;
+	top:.03rem;
+	right:1%;
+	background-color:#eee;
+	color:#666;
+	cursor:pointer;
+	border:none;
+	border-top-right-radius:.04rem;
+	border-bottom-right-radius:.04rem;
+	outline:none;
+    font-size:.14rem;
+}
+.wrap{
+    max-width:6.4rem;
+	margin:.1rem auto 0 auto;
+	background-color:#ffe;}
+#tour{
+	max-width:6.4rem;
+	margin:.1rem auto 0 auto;
+	
+}
+#tour h2,h3{
+	text-align:center;
+	color:#666;
+}
+#tour h2{
+	font-size:.26rem;
+}
+#tour h3{
+	font-size:.16rem;
+	margin:.05rem 0 .1rem 0;
+	font-weight:normal;
+}
+#tour figure{
+    width:50%;
+    float:left;
+    background-color:#eee;
+    margin:0 0 .05rem 0;
+    font-size:.16rem;
+}
+#tour figcaption{
+	color:#666;
+	padding:.02rem .05rem;
+	font-size:.16rem;
+}
+#tour figcaption h4{
+	font-weight:normal;
+	white-space:nowrap;
+	overflow:hidden;
+    text-overflow:ellipsis;
+}
+#tour figcaption p{
+	white-space:nowrap;
+	overflow:hidden;
+    text-overflow:ellipsis;
+}
+#tour figcaption .info{
+	padding:.1rem 0 0 0;
+	font-size:.16rem;
+}
+#tour figcaption .info .sat{
+	float:right;
+	position:relative;
+	right:.05rem;
+	font-style:normal;
+}
+#tour figcaption .price{
+	color:#f60;
+}
+#tour figcaption .price strong{
+	letter-spacing:.01rem;
+}
+#tour figure img{
+	width:320px;
+	height:2rem;
+	padding:.02rem;
+	vertical-align:middle;
+	border-radius:.04rem;
+}
+/*清除浮动常用方法加一个div*/
+.clearfix:after{
+	display:block;
+	content:'.';
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.more{
+	height:.35rem;
+	line-height:.35rem;
+	font-size:0.15rem;
+	color:#666;
+	margin:0 auto;
+	background-color:#eee;
+	text-align:center;
+}
+
+#headline {
+    max-width:6.4rem;
+    margin:0 auto;
+    padding:.45rem 0 0 0; 
+    position:relative;
+}
+
+#headline img{
+	width:6.4rem;
+	height:1rem;
+}
+
+#headline hgroup{
+	position:absolute;
+	top:50%;
+	left:5%;
+	color:#fff;
+ }
+#headline hgroup h2{
+    font-size:.22rem;
+ }
+#headline hgroup h3{
+    font-size:.16rem;
+    color:#fff;
+ }
+
+ .information figure:after{
+	display:block;
+	content:'.';
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+ .information figure{
+ 	border:1px solid #ddd;
+ 	margin:.15rem 0 0 0;
+ 	position:relative;
+ }
+
+ .information figure img{
+ 	 width:50%;
+ 	 float:left;
+ }
+
+.information figure figcaption{
+ 	 width:48%;
+ 	 float:right;
+ }
+
+ .information .title{
+ 	border:none;
+ 	padding:0 0 .05rem 0;
+ }
+
+ .information .small-title{
+ 	font-weight:normal;
+ 	padding:0;
+ 	display:-webkit-box;
+ 	overflow:hidden;
+ 	-webkit-line-clamp:2;
+ 	-webkit-box-orient:vertical;
+ }
+
+ .information .price{
+ 	color:#f60;
+ 	position:absolute;
+ 	bottom:0;
+ }
+
+.information .price strong{
+	font-size:.26rem;
+}
+
+ .list{
+     font-size:.16rem;
+     max-width:6.4rem;
+     margin:.15rem auto;
+     padding:0 .1rem;
+     color:#666;
+ }
+
+.list h2{
+	font-size:.2rem;
+	border-bottom:.01rem dashed #999;
+	padding:0 0 .15rem 0;
+}
+
+.about p{
+
+	line-height:2;/*两倍的font-size*/
+	margin:.2rem 0;
+}
+.about address{
+	font-style:normal;
+	margin:.2rem 0;
+	line-height:1.6;
+}
+
+#footer{
+	max-width:6.4rem;
+	background-color:#222;
+	clear:both;
+	margin:0 auto;
+	color:#777;
+	text-align:center;
+	padding:0.1rem 0;
+	font-size:0.16rem;
+}
+#footer .top{
+	padding:0 0 0.05rem 0;
+}
+
+.ticket .type {
+	margin: .2rem 0 .2rem 0;
+	border: none;
+}
+.ticket .type mark {
+	color: #fff;
+	background-color: #458B00;
+	padding: .05rem .08rem;
+	border-radius: .4rem;
+	margin: 0 .1rem 0 .16rem;
+}
+.ticket .form {
+	border: none;
+}
+.ticket .form p {
+	margin: .1rem 0;
+}
+.ticket .form label {
+	display: block;
+	margin: 0 0 .05rem 0;
+}
+.ticket .form input {
+	width: 97%;
+	height: .2rem;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: .04rem;
+	padding: .05rem;
+	color: #666;
+}
+.ticket .submit {
+	width: 30%;
+	border-radius: .04rem;
+	background-color: #f60;
+	color: #fff;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	padding: .1rem;
+	margin: 0 auto;
+	display: block;
+}
+.ticket .new {
+	margin: .2rem 0 0 0;
+}
+.ticket .new ul {
+	margin: 20px 0 0 0;
+}
+.ticket .new li {
+	display: inline-block;
+	padding: 5px 10px;
+}
+.ticket .new li:first-child {
+	padding-left: 0;
+}
+.ticket .new li:nth-child(2) {
+	background-color: #458B00;
+	border-radius: 4px;
+	color: #fff;
+}
+.ticket table {
+	width: 100%;
+    border-collapse:collapse;
+    margin: 20px 0 0 0;
+    border: 1px solid #ddd;
+}
+.ticket table th {
+	padding: .15rem 0;
+	border-bottom: 1px solid #ddd;
+	font-weight: normal;
+}
+.ticket table td {
+	padding: .15rem 0;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+.ticket table tr:nth-child(2n) {
+	background-color: #fafafa;
+}
+.ticket table tr:hover {
+	background-color: #eee;
+}
+.ticket .price {
+	color: #f60;
+}
+.ticket .more2 {
+	text-align: center;
+	margin: 0 auto;
+	cursor: pointer;
+	display: block;
+	color: #666;
+}
+.ticket .reserve {
+	border-radius: .04rem;
+	background-color: #f60;
+	color: #fff;
+	text-align: center;
+	padding: .05rem .08rem;
+}
+
+ /*媒体查询（要放在最后面）*/
+@media(max-width:480px){
+	  #adver img{
+	  	max-width:6.4rem;
+	  }
+} 
+@media(min-width:480px)and(max-width:640px){
+      #tour h2,.information .price strong{
+      	font-size:.26rem;
+      }
+      #tour h3,#tour figcaption,#tour figcaption .info,.list{
+      	font-size:.16rem;
+      }
+      #footer{
+      	font-size:.16rem;
+      }
+      #headline hgroup h2{
+        font-size:.22rem;
+     }
+     #headline hgroup h3{
+       font-size:.16rem;
+     }
+    .list h2{
+	font-size:.2rem;
+    }
+    #adver img{
+	  	width:100%;
+	  }
+
+}
+
+@media(max-width:480px){
+	  #tour h2,.information .price strong{
+      	font-size:.20rem;
+      }
+       
+      #tour h3,#tour figcaption,#tour figcaption .info,.list{
+      	font-size:.14rem;
+      }
+      #footer{
+      	font-size:.13rem;
+      }
+      #headline hgroup h2{
+       font-size:.18rem;
+      }
+     #headline hgroup h3,.list h2 {
+      font-size:.14rem;
+     }
+     #adver img{
+	  	width:100%;
+	  }
+}
+
+
+
+
+
+
+
+
